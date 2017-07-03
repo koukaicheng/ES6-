@@ -49,6 +49,7 @@
 
 /***/ }),
 /* 1 */
+
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59,9 +60,12 @@
 
 /***/ }),
 /* 2 */
+=======
+
 /***/ (function(module, exports) {
 
 	"use strict";
+
 
 	function test() {
 	  var a = 1;
@@ -253,6 +257,18 @@
 
 	  console.log(title1, title2);
 	}
+=======
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Text = function Text() {
+	  _classCallCheck(this, Text);
+
+	  this.a = "ssss";
+	};
+
+	var text = new Text();
+	document.body.innerHTML = text.a;
+
 
 /***/ })
 /******/ ]);
