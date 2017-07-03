@@ -13,7 +13,7 @@
   ├──gulpfile.babel.js   // 命令入口文件
 </pre> 
 #### ES6语法
-  
+  以下文件里面的ES6语法都会有详细的解释
  <pre>
     ├── app 
       ├──js
