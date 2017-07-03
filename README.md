@@ -18,7 +18,7 @@
     ├── app 
       ├──js
         ├──clss
-          ├──lesson1.js  //let和const的语法和说明
+          ├──[lesson1.js](https://github.com/koukaicheng/ES6-/blob/master/app/js/class/lesson1.js)  //let和const的语法和说明
           ├──lesson2.js  //解构赋值的几种类型和使用环境
           ├──lesson2.js  //ES6正则语法扩展
  </pre>
