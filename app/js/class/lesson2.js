@@ -40,7 +40,7 @@
   //接受函数返回的多个值
   function f(){
     return [1,2]
-  }
+}
   let a,b;
   [a,b]=f();
   // console.log(a,b) //1,2
