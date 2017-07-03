@@ -1,6 +1,6 @@
 
 ### ES6从入门到实战
-#### ES6第一天：配置环境（配置了一天，windows命令是真坑）
+#### ES6配置环境（配置了一天，windows命令是真坑）
  ## 项目结构
  <pre>
   ├── app                // 用ES6写的源代码 也就是开发代码
@@ -12,5 +12,13 @@
   ├──.babelrc            // ES6编译插件
   ├──gulpfile.babel.js   // 命令入口文件
 </pre> 
-
-
+#### ES6语法
+  
+ <pre>
+    ├── app 
+      ├──js
+        ├──clss
+          ├──lesson1.js  //let和const的语法和说明
+          ├──lesson2.js  //解构赋值的几种类型和使用环境
+          ├──lesson2.js  //ES6正则语法扩展
+ </pre>
