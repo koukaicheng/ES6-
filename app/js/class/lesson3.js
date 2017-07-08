@@ -1,4 +1,27 @@
 {
+
+    //es5中正则构造函数的写法
+    let regx = new RegExp('abc','i'); //两个参数 以字符串的形式
+    let regx2 = new RegExp(/abc/i); // 一个参数，不能掺加字符串
+    // console.log()
+}
+{
+    // ES6中正则构造函数的写法
+     let regx2 = new RegExp(/abc/i,'i'); //可以有两个参数 后面的字符串的I会把前边的i替换
+}
+{
+//    Es6增加了y,u修饰符
+  let s = 'bbb_bb_b';
+  let a1 = /b+/g;
+  let a2 = /b+/y;
+  //g , y修饰符的区别  都是全局匹配 g 不强调第一个字符串就能匹配上，能够继续往下寻找  y就不同 必须第一个就得匹配上 不然返回null
+  console.log(a1.exec(s),a2.exec(s));  //a1.exec(s) bbb  ,a2.exec(s)bbb 结果一样
+  console.log(a1.exec(s),a2.exec(s));  //a1.exec(s) bb  ,a2.exec(s)null
+  //判断开启y修饰符
+  console.log(a1.sticky,a2.sticky) //false,true
+}
+{
+
     // #构造函数#
     let regex = new RegExp('xyz', 'i'); //第一个参数是字符串，第二个是修饰符
     let regex2 = new RegExp(/xyz/i); //第一个参数是正则表达式，不接受第二个参数，否则会报错
@@ -61,3 +84,6 @@
     console.log('s变通方法',/foo.bar/.test('foo\nbar'));
     console.log('s变通方法',/foo[^]bar/.test('foo\nbar'));
 }
+
+
+
