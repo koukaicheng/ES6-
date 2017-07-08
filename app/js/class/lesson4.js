@@ -15,7 +15,9 @@
   console.log('1',s.charAt(1));
   console.log('at0',s.charCodeAt(0));
   console.log('at1',s.charCodeAt(1));
-
+  //  JavaScript内部，字符以UTF-16的格式储存，每个字符固定为2个字节。
+  //  对于那些需要4个字节储存的字符（Unicode码点大于0xFFFF的字符），
+  //  JavaScript会认为它们是两个字符。
   let s1='𠮷a';
   console.log('length',s1.length);
   console.log('code0',s1.codePointAt(0));
@@ -24,58 +26,58 @@
   console.log('code2',s1.codePointAt(2));
 }
 
-{
-  console.log(String.fromCharCode("0x20bb7"));
-  console.log(String.fromCodePoint("0x20bb7"));
-}
+// {
+//   console.log(String.fromCharCode("0x20bb7"));
+//   console.log(String.fromCodePoint("0x20bb7"));
+// }
 
-{
-  let str='\u{20bb7}abc';
-  for(let i=0;i<str.length;i++){
-    console.log('es5',str[i]);
-  }
-  for(let code of str){
-    console.log('es6',code);
-  }
-}
+// {
+//   let str='\u{20bb7}abc';
+//   for(let i=0;i<str.length;i++){
+//     console.log('es5',str[i]);
+//   }
+//   for(let code of str){
+//     console.log('es6',code);
+//   }
+// }
 
-{
-  let str="string";
-  console.log('includes',str.includes("c"));
-  console.log('start',str.startsWith('str'));
-  console.log('end',str.endsWith('ng'));
-}
+// {
+//   let str="string";
+//   console.log('includes',str.includes("c"));
+//   console.log('start',str.startsWith('str'));
+//   console.log('end',str.endsWith('ng'));
+// }
 
-{
-  let str="abc";
-  console.log(str.repeat(2));
-}
+// {
+//   let str="abc";
+//   console.log(str.repeat(2));
+// }
 
-{
-  let name="list";
-  let info="hello world";
-  let m=`i am ${name},${info}`;
-  console.log(m);
-}
+// {
+//   let name="list";
+//   let info="hello world";
+//   let m=`i am ${name},${info}`;
+//   console.log(m);
+// }
 
-{
-  console.log('1'.padStart(2,'0'));
-  console.log('1'.padEnd(2,'0'));
-}
+// {
+//   console.log('1'.padStart(2,'0'));
+//   console.log('1'.padEnd(2,'0'));
+// }
 
-{
-  let user={
-    name:'list',
-    info:'hello world'
-  };
-  console.log(abc`i am ${user.name},${user.info}`);
-  function abc(s,v1,v2){
-    console.log(s,v1,v2);
-    return s+v1+v2
-  }
-}
+// {
+//   let user={
+//     name:'list',
+//     info:'hello world'
+//   };
+//   console.log(abc`i am ${user.name},${user.info}`);
+//   function abc(s,v1,v2){
+//     console.log(s,v1,v2);
+//     return s+v1+v2
+//   }
+// }
 
-{
-  console.log(String.raw`Hi\n${1+2}`);
-  console.log(`Hi\n${1+2}`);
-}
+// {
+//   console.log(String.raw`Hi\n${1+2}`);
+//   console.log(`Hi\n${1+2}`);
+// }
