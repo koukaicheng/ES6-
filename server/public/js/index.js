@@ -49,6 +49,8 @@
 
 /***/ }),
 /* 1 */
+
+
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7532,10 +7534,17 @@
 	  } });
 
 /***/ }),
+
 /* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
+
+
+/***/ (function(module, exports) {
+
+
 	'use strict';
+
 
 	var metadata = __webpack_require__(278),
 	    anObject = __webpack_require__(13),
@@ -8709,6 +8718,45 @@
 
 	  console.log('s', '\uD842\uDFB7');
 	}
+=======
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+	function test() {
+	  var a = 1;
+	  console.log(a);
+	}
+	//ES6新增了块级作用域的概念，所谓块级作用域所在的范围就是在大括号里面的作用域{}，
+	// 而在大括号外面访问不到 如果在作用域外访问会报未定义的错误
+	test();
+	// console.log(a);  //a is no defined
+
+
+	var Text = function Text() {
+	  _classCallCheck(this, Text);
+
+	  this.a = "ssss";
+	};
+
+	var text = new Text();
+	document.body.innerHTML = text.a;
+
+	  console.log(title1, title2);
+	}
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Text = function Text() {
+	  _classCallCheck(this, Text);
+
+	  this.a = "ssss";
+	};
+
+	var text = new Text();
+	document.body.innerHTML = text.a;
+
+
 
 	// {
 	//   let s='𠮷';

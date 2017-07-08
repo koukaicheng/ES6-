@@ -1,4 +1,5 @@
 {
+
     //es5中正则构造函数的写法
     let regx = new RegExp('abc','i'); //两个参数 以字符串的形式
     let regx2 = new RegExp(/abc/i); // 一个参数，不能掺加字符串
@@ -20,6 +21,7 @@
   console.log(a1.sticky,a2.sticky) //false,true
 }
 {
+
     // #构造函数#
     let regex = new RegExp('xyz', 'i'); //第一个参数是字符串，第二个是修饰符
     let regex2 = new RegExp(/xyz/i); //第一个参数是正则表达式，不接受第二个参数，否则会报错
@@ -82,4 +84,6 @@
     console.log('s变通方法',/foo.bar/.test('foo\nbar'));
     console.log('s变通方法',/foo[^]bar/.test('foo\nbar'));
 }
+
+
 

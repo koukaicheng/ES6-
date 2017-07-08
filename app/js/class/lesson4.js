@@ -8,6 +8,7 @@
 }
 
 
+
 // {
 //   let s='𠮷';
 //   console.log('length',s.length);
@@ -23,6 +24,25 @@
 //   console.log('code1',s1.codePointAt(1));
 //   console.log('code2',s1.codePointAt(2));
 // }
+
+{
+  let s='𠮷';
+  console.log('length',s.length);
+  console.log('0',s.charAt(0));
+  console.log('1',s.charAt(1));
+  console.log('at0',s.charCodeAt(0));
+  console.log('at1',s.charCodeAt(1));
+  //  JavaScript内部，字符以UTF-16的格式储存，每个字符固定为2个字节。
+  //  对于那些需要4个字节储存的字符（Unicode码点大于0xFFFF的字符），
+  //  JavaScript会认为它们是两个字符。
+  let s1='𠮷a';
+  console.log('length',s1.length);
+  console.log('code0',s1.codePointAt(0));
+  console.log('code0',s1.codePointAt(0).toString(16));
+  console.log('code1',s1.codePointAt(1));
+  console.log('code2',s1.codePointAt(2));
+}
+
 
 // {
 //   console.log(String.fromCharCode("0x20bb7"));
