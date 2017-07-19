@@ -70,6 +70,8 @@
 //repeat 通过repeat为字符串重复次数
 // {
 //   let str="abc";
+//   let two = str.repeat(2);
+//   console.log(two)
 //   console.log(str.repeat(2)); //abcabc
 // }
  //模板字符串
@@ -83,8 +85,8 @@
 {
   // padStart 为一个字符串在起始位置增添长度为第一个参数减去实际长度的一个第二个参数指定的字符
   // padEnd 相反
-  // console.log('1'.padStart(2,'0')); // 01
-  // console.log('1'.padEnd(2,'0')); //10
+  console.log('1'.padStart(3,'02')); // 01
+  console.log('1'.padEnd(2,'0')); //10
 }
 // 标签模板
 // {
