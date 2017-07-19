@@ -43,7 +43,7 @@
 // }
 
 //Math.cbrt  值的立方根
-{
-  console.log('-1',Math.cbrt(-1));
-  console.log('8',Math.cbrt(8));
-}
+// {
+//   console.log('-1',Math.cbrt(-1));
+//   console.log('8',Math.cbrt(8));
+// }
